@@ -1,0 +1,2 @@
+# python
+Python console codes
