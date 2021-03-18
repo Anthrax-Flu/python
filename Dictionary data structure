@@ -1,0 +1,21 @@
+#Create a dictionary for the days in the months of a year whose keys are month names and values are the number of days in the corresponding months. Using this dictionary,
+#(a) Ask the user to enter a month name and print how many days are there in the month.
+#(b) Print all keys in alphabetical order
+#(c) Print all of the months with 31 days.
+
+import pandas as pd
+import numpy as np
+
+storage = { "january":31,"february": 28, "march":31,"april":30,"may":31,"june":30,"july":31,"august":31,"september":31,"october":31,  
+           "november":30,"december":31}   
+userInput = input("Enter Month in Letters: ")
+print("The days in the month of {userInpt} are: ", userInput,"has",storage [userInput],"days")
+
+orderedList = list(storage.keys())
+orderedList.sort()
+print(orderedList)
+
+for m in month:
+for m in storage:
+    if(storage[m]==31):
+        print(m)    
